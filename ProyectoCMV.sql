@@ -138,18 +138,23 @@ INSERT INTO Personal (nombre, nacionalidad, cantidad_peliculas) VALUES
 ('Chad Lindberg', 'Estadounidense', 1),
 ('Johnny Strong', 'Estadounidense', 4),
 ('Reggie Lee', 'Filipino', 1),
-('Jon Favreau', 'Estadounidense', 1);
+('Jon Favreau', 'Estadounidense', 1),
+('Natalie Portman', 'Jerosolimitano', 1),
+('Angelina Jolie', 'Estadounidense', 1);
 
 INSERT INTO Director (nombre_director) VALUES
 ('Justin Lin'),
 ('James Wan'),
-('Jon Favreau');
+('Jon Favreau'),
+('Natalie Portman'),
+('Angelina Jolie');
 
 INSERT INTO Protagonista (nombre_protagonista) VALUES
 ('Vin Diesel'),
 ('Paul Walker'),
 ('Tyrese Gibson'),
-('Jordana Brewster');
+('Jordana Brewster'),
+('Natalie Portman');
 
 INSERT INTO Reparto (nombre_reparto) VALUES
 ('Chad Lindberg'),
@@ -164,7 +169,10 @@ INSERT INTO Pelicula (id_pelicula, titulo_distribucion, titulo_original, titulo_
 (4, 'Fast & Furious', 'fast & furious', 'Rápidos y Furiosos', 'Acción', 'Inglés', '2009', 'Un asesinato obliga a Don Toretto, un ex convicto huido, y al agente Brian O`Conner a volver a Los Ángeles. donde su pelea se reaviva. Pero al tener que enfrentarse a un enemigo común, se ven obligados a formar una alianza incierta si quieren conseguir desbaratar sus planes.', '2009-04-03', '01:47:00', 'http://www.rapidosyfuriosos.com.ar/franchise.php?id=4', '+ 13 años', 'Justin Lin'),
 (5, 'Fast Five', 'fast five', 'Rápidos y Furiosos 5in Control', 'Acción', 'Inglés', 2011, 'Luke Hobbs, un duro agente federal acostumbrado a dar caza a todos sus objetivos, debe confiar en su instinto para atraparles y que nadie más se le adelante. De esta forma, él y su equipo se embarcarán en un veloz viaje sin tregua para frenar a los protagonistas de la saga.', '2011-04-29', '02:11:00', 'https://www.imdb.com/title/tt1596343/', '+ 15 años', 'Justin Lin'),
 (6, 'Fast & Furious 6', 'fasT & FurIouS 6', 'Rápido y Furioso 6', 'Acción', 'Inglés', 2013, 'Desde que Dom y Brian destruyeron el imperio de un mafioso y se hicieron con cien millones de dólares, se encuentran en paradero desconocido; no pueden regresar a casa porque la ley los persigue. Entretanto, Hobbs ha seguido la pista por una docena de países a una banda de letales conductores mercenarios, cuyo cerebro cuenta con la inestimable ayuda de la sexy Letty, un viejo amor de Dom que éste daba por muerta. La única forma de detenerlos es enfrentarse a ellos en las calles, así que Hobbs le pide a Dom que reúna a su equipo en Londres. ¿Qué obtendrán a cambio? Un indulto para que todos puedan volver a casa con sus familias.', '2013-05-24', '02:10:00', 'https://www.imdb.com/title/tt1905041/', '+ 15 años', 'Justin Lin'),
-(7, 'Furious 7', 'furious 7', 'Rápidos y Furiosos 7', 'Acción', 'Inglés', 2015, 'Luego de haber derrotado al terrorista Owen Shaw, Dominic Toretto y sus amigos creían haber dejado la vida ruda atrás. Sin embargo, Deckard Shaw, el hermano de Owen, aparece de pronto para cobrar venganza. Su intención es eliminar al clan que exterminó a su hermano, uno por uno. ', '2015-04-03', '02:20:00', 'https://www.imdb.com/title/tt2820852/', '+ 15 años', 'James Wan');
+(7, 'Furious 7', 'furious 7', 'Rápidos y Furiosos 7', 'Acción', 'Inglés', 2015, 'Luego de haber derrotado al terrorista Owen Shaw, Dominic Toretto y sus amigos creían haber dejado la vida ruda atrás. Sin embargo, Deckard Shaw, el hermano de Owen, aparece de pronto para cobrar venganza. Su intención es eliminar al clan que exterminó a su hermano, uno por uno. ', '2015-04-03', '02:20:00', 'https://www.imdb.com/title/tt2820852/', '+ 15 años', 'James Wan'),
+(8, 'Iron Man', 'IRON MAN', 'El hombre de hierro', 'Acción', 'Inglés', 2008, 'Tony Stark es un inventor de armamento brillante que es secuestrado en el extranjero. Sus captores son unos terroristas que le obligan a construir una máquina destructiva pero Tony se construirá una armadura para poder enfrentarse a ellos y escapar.', '2008-04-30', '02:06:00', 'https://www.marvel.com/', '+ 15 años', 'Jon Favreau'),
+(9, 'A Tale of Love and Darkness', 'A Tale of Love and Darkness', 'Un historia de amor y oscuridad', 'Belico/Romance', 'Inglés', 2015, 'Basada en las memorias de Amos Oz, uno de los primeros escritores judíos que abogó por encontrar una solución al eterno conflicto entre Israel y Palestina. Desde su propio punto de vista, en aquel momento era tan sólo un niño, el autor aborda la creación del Estado de Israel. A los doce años, su madre se suicida y su vida queda marcada para siempre por este hecho. Tras esta tragedia, comienza a trabajar como escritor, participando activamente en la vida política del país.', '2015-09-14', '01:35:00', 'NULL', '+ 13 años', 'Natalie Portman'),
+(10, 'In The Land of Blood and Honey', 'In The Land of Blood and Honey', 'En tierra de sangre y miel', 'Belico/Romance', 'Inglés', 2011, 'Antes de la guerra de los Balcanes (años 90), Danijel, un policía serbio, y Ajla, una joven artista bosnia de religión musulmana, se conocieron y se enamoraron, pero la guerra y la terrible violencia que asoló el país los cambió para siempre. Al verse involucrados en el conflicto, su relación y la lealtad que se profesaban empezaron a desmoronarse.', '2011-12-23', '02:07:00', 'NULL', '+ 13 años', 'Angelina Jolie');
 
 INSERT INTO MPelicula (id_pelicula, paises_origen) VALUES
 (1, 'Estados Unidos'),
@@ -173,7 +181,10 @@ INSERT INTO MPelicula (id_pelicula, paises_origen) VALUES
 (4, 'Estados Unidos'),
 (5, 'Estados Unidos'),
 (6, 'Estados Unidos'),
-(7, 'Estados Unidos');
+(7, 'Estados Unidos'),
+(8, 'Estados Unidos'),
+(9, 'Estados Unidos'),
+(10, 'Estados Unidos');
 
 INSERT INTO Actuo (ident_pelicula, nombre_p) VALUES
 (1,'Vin Diesel'),
@@ -196,7 +207,8 @@ INSERT INTO Actuo (ident_pelicula, nombre_p) VALUES
 (4, 'Jordana Brewster'),
 (5, 'Jordana Brewster'),
 (6, 'Jordana Brewster'),
-(7, 'Jordana Brewster');
+(7, 'Jordana Brewster'),
+(9, 'Natalie Portman');
 
 INSERT INTO Participo (ident_pelicula, nombre_r) VALUES
 (1, 'Chad Lindberg'),
@@ -204,7 +216,8 @@ INSERT INTO Participo (ident_pelicula, nombre_r) VALUES
 (5, 'Johnny Strong'),
 (6, 'Johnny Strong'),
 (7, 'Johnny Strong'),
-(1, 'Reggie Lee');
+(1, 'Reggie Lee'),
+(8, 'Jon Favreau');
 
 INSERT INTO Cine (nombre, direccion, telefono) VALUES
 ('Cine del Paseo', 'Sobremonte 80, Río Cuarto, Córdoba', '03584621235'),
@@ -227,39 +240,3 @@ INSERT INTO Funcion (codigo, fecha, hora_comienzo, numero_sala, id_peli) VALUES
 (5, '2024-05-14', '18:00:00', 3, 3),
 (6, '2024-05-10', '14:00:00', 5, 4),
 (7, '2024-05-15', '15:30:00', 6, 5);
-
-
--- Para probar que funciona la auditoria
--- select * from Auditoria;
--- select * from Pelicula where id_pelicula = 1;
--- UPDATE Pelicula SET fecha_estreno = '2020-06-01' WHERE id_pelicula = 1;
-
--- Para probar que funciona el dominio de la calificacion de las peliculas
--- INSERT INTO Pelicula (id_pelicula, titulo_distribucion, titulo_original, titulo_español, genero, idioma_original, año_produccion, resumen, fecha_estreno, duracion, url, calificacion, nombre_d) VALUES
--- (8, 'Iron Man', 'IRON MAN', 'El hombre de hierro', 'Acción', 'Inglés', 2008, 'Tony Stark es un inventor de armamento brillante que es secuestrado en el extranjero. Sus captores son unos terroristas que le obligan a construir una máquina destructiva pero Tony se construirá una armadura para poder enfrentarse a ellos y escapar.', '2008-04-30', '02:06:00', 'https://www.marvel.com/', '+ 9 años', 'Jon Favreau');
-
-
--- Para probar los DELETE SET NULL y DELETE ON CASCADE
--- INSERT INTO Personal (nombre, nacionalidad, cantidad_peliculas) VALUES
--- ('Jon Favreau', 'Estadounidense', 1);
-
--- INSERT INTO Director (nombre_director) VALUES
--- ('Jon Favreau');
-
--- INSERT INTO Reparto (nombre_reparto) VALUES
--- Jon Favreau');
-
--- INSERT INTO Pelicula (id_pelicula, titulo_distribucion, titulo_original, titulo_español, genero, idioma_original, año_produccion, resumen, fecha_estreno, duracion, url, calificacion, nombre_d) VALUES
--- (8, 'Iron Man', 'IRON MAN', 'El hombre de hierro', 'Acción', 'Inglés', 2008, 'Tony Stark es un inventor de armamento brillante que es secuestrado en el extranjero. Sus captores son unos terroristas que le obligan a construir una máquina destructiva pero Tony se construirá una armadura para poder enfrentarse a ellos y escapar.', '2008-04-30', '02:06:00', 'https://www.marvel.com/', '+ 15 años', 'Jon Favreau');
-
--- INSERT INTO Participo (ident_pelicula, nombre_r) VALUES
--- (8, 'Jon Favreau');
-
--- SELECT * FROM Personal;
--- SELECT * FROM Director;
--- SELECT * FROM Reparto;
--- DELETE FROM Personal WHERE nombre = 'Jon Favreau';
-
--- SELECT * FROM Pelicula;
--- SELECT * FROM Participo;
--- DELETE FROM Pelicula WHERE id_pelicula = 8;
